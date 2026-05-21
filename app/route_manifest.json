@@ -1,0 +1,891 @@
+{
+  "count": 105,
+  "routes": [
+    {
+      "path": "/blogs/{language}/{page}",
+      "access": "public",
+      "tag": "blogs",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/cloud-storages/user/obj",
+      "access": "auth",
+      "tag": "cloud-storages",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/cloud-storages/user/obj/{id}",
+      "access": "auth",
+      "tag": "cloud-storages",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/configs/public/contact/obj",
+      "access": "public",
+      "tag": "configs",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/configs/public/notification/obj",
+      "access": "public",
+      "tag": "configs",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/configs/public/obj",
+      "access": "public",
+      "tag": "configs",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/contents/blogs/public/list",
+      "access": "public",
+      "tag": "contents",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/contents/blogs/public/obj/{slug}",
+      "access": "public",
+      "tag": "contents",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/contents/blogs/public/pagination/obj",
+      "access": "public",
+      "tag": "contents",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/coupons/owner/consumable/obj",
+      "access": "auth",
+      "tag": "coupons",
+      "sources": [
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/coupons/public/obj",
+      "access": "public",
+      "tag": "coupons",
+      "sources": [
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/optional-owner/product-reports/brand-metrics/list",
+      "access": "optional_owner",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/optional-owner/product-reports/brand-metrics/list/{report_id}",
+      "access": "optional_owner",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/optional-owner/product-reports/brands-metrics/obj",
+      "access": "optional_owner",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/optional-owner/product-reports/brands-metrics/obj/{report_id}",
+      "access": "optional_owner",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/optional-owner/product-reports/interpretation/list",
+      "access": "optional_owner",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/optional-owner/product-reports/interpretation/list/{report_id}",
+      "access": "optional_owner",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/optional-owner/product-reports/investment/obj",
+      "access": "optional_owner",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/optional-owner/product-reports/investment/obj/{report_id}",
+      "access": "optional_owner",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/optional-owner/product-reports/overview/obj",
+      "access": "optional_owner",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/optional-owner/product-reports/overview/obj/{report_id}",
+      "access": "optional_owner",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/optional-owner/product-reports/periods/obj",
+      "access": "optional_owner",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/optional-owner/product-reports/periods/obj/{report_id}",
+      "access": "optional_owner",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/optional-owner/product-reports/product-metrics-preview/list",
+      "access": "optional_owner",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/optional-owner/product-reports/product-metrics-preview/list/{report_id}",
+      "access": "optional_owner",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/optional-owner/product-reports/product-metrics/list",
+      "access": "optional_owner",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/optional-owner/product-reports/product-metrics/list/{report_id}",
+      "access": "optional_owner",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/optional-owner/product-reports/products-metrics/obj",
+      "access": "optional_owner",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/optional-owner/product-reports/products-metrics/obj/{report_id}",
+      "access": "optional_owner",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/optional-owner/product-reports/profile/obj",
+      "access": "optional_owner",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/optional-owner/product-reports/profile/obj/{report_id}",
+      "access": "optional_owner",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/optional-owner/product-reports/profit/obj",
+      "access": "optional_owner",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/optional-owner/product-reports/profit/obj/{report_id}",
+      "access": "optional_owner",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/optional-owner/product-reports/samples/list",
+      "access": "optional_owner",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/optional-owner/product-reports/samples/list/{report_id}",
+      "access": "optional_owner",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/optional-owner/product-reports/samples/obj",
+      "access": "optional_owner",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/optional-owner/product-reports/samples/obj/{report_id}",
+      "access": "optional_owner",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/optional-owner/tasks/obj",
+      "access": "optional_owner",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/optional-owner/tasks/obj/{task_id}",
+      "access": "optional_owner",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/optional-owner/tasks/obj/{task_id}/report",
+      "access": "optional_owner",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/owner/asin-info/obj",
+      "access": "auth",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/owner/products-preview/obj",
+      "access": "auth",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/owner/tasks/list",
+      "access": "auth",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/owner/tasks/obj",
+      "access": "auth",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/owner/tasks/obj/{task_id}",
+      "access": "auth",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/public/product-reports/show-case/list",
+      "access": "public",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/features/amz-product-reports/user/product-reports/show-case/list",
+      "access": "auth",
+      "tag": "features_amz-product-reports",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/features/amz-shuffle-products/public/root-categories/obj",
+      "access": "public",
+      "tag": "features_amz-shuffle-products",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/features/amz-shuffle-products/user/exclude-categories/obj",
+      "access": "auth",
+      "tag": "features_amz-shuffle-products",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/features/amz-shuffle-products/user/obj",
+      "access": "auth",
+      "tag": "features_amz-shuffle-products",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/features/amz-shuffle-products/user/searched-categories/obj",
+      "access": "auth",
+      "tag": "features_amz-shuffle-products",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/features/configs/owner/shipping-and-exchange-rates/obj",
+      "access": "auth",
+      "tag": "features_configs",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/memberships/owner/list",
+      "access": "auth",
+      "tag": "memberships",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/memberships/owner/obj",
+      "access": "auth",
+      "tag": "memberships",
+      "sources": [
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/memberships/owner/obj/{membership_id}",
+      "access": "auth",
+      "tag": "memberships",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/orders/owner/alipay/obj",
+      "access": "auth",
+      "tag": "orders",
+      "sources": [
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/orders/owner/alipay/obj/{order_id}",
+      "access": "auth",
+      "tag": "orders",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/orders/owner/list",
+      "access": "auth",
+      "tag": "orders",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/orders/owner/obj",
+      "access": "auth",
+      "tag": "orders",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/orders/owner/obj/{order_id}",
+      "access": "auth",
+      "tag": "orders",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/orders/owner/obj/{order_id}/paid",
+      "access": "auth",
+      "tag": "orders",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/orders/user/stripe/checkout",
+      "access": "auth",
+      "tag": "orders",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/orgs/public/obj",
+      "access": "public",
+      "tag": "orgs",
+      "sources": [
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/orgs/public/obj/{org_id}",
+      "access": "public",
+      "tag": "orgs",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/orgs/user/list",
+      "access": "auth",
+      "tag": "orgs",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/orgs/user/org",
+      "access": "auth",
+      "tag": "orgs",
+      "sources": [
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/orgs/user/org/obj",
+      "access": "auth",
+      "tag": "orgs",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/orgs/user/org/{org_id}",
+      "access": "auth",
+      "tag": "orgs",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/orgs/user/org/{org_id}/add-admin",
+      "access": "auth",
+      "tag": "orgs",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/orgs/user/org/{org_id}/add-superadmin",
+      "access": "auth",
+      "tag": "orgs",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/orgs/user/org/{org_id}/invite",
+      "access": "auth",
+      "tag": "orgs",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/orgs/user/org/{org_id}/leave",
+      "access": "auth",
+      "tag": "orgs",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/orgs/user/org/{org_id}/list",
+      "access": "auth",
+      "tag": "orgs",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/orgs/user/org/{org_id}/remove",
+      "access": "auth",
+      "tag": "orgs",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/progresses/user/list",
+      "access": "auth",
+      "tag": "progresses",
+      "sources": [
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/progresses/user/obj",
+      "access": "auth",
+      "tag": "progresses",
+      "sources": [
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/referrals/public/validate-code",
+      "access": "public",
+      "tag": "referrals",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/referrals/user/codes/list",
+      "access": "auth",
+      "tag": "referrals",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/referrals/user/codes/obj",
+      "access": "auth",
+      "tag": "referrals",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/referrals/user/codes/obj/{code}",
+      "access": "auth",
+      "tag": "referrals",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/referrals/user/commissions/list",
+      "access": "auth",
+      "tag": "referrals",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/referrals/user/policies/obj",
+      "access": "auth",
+      "tag": "referrals",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/referrals/user/referees/list",
+      "access": "auth",
+      "tag": "referrals",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/referrals/user/stats/obj",
+      "access": "auth",
+      "tag": "referrals",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/referrals/user/wallets/obj",
+      "access": "auth",
+      "tag": "referrals",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/referrals/user/withdrawals/list",
+      "access": "auth",
+      "tag": "referrals",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/referrals/user/withdrawals/obj",
+      "access": "auth",
+      "tag": "referrals",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/supports/public/obj",
+      "access": "public",
+      "tag": "supports",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/token-containers/owner/extendable/obj",
+      "access": "auth",
+      "tag": "token-containers",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/token-containers/owner/list",
+      "access": "auth",
+      "tag": "token-containers",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/token-containers/owner/obj",
+      "access": "auth",
+      "tag": "token-containers",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/token-services/public/list",
+      "access": "public",
+      "tag": "token-services",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/token-services/public/obj",
+      "access": "public",
+      "tag": "token-services",
+      "sources": [
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/token-services/public/obj/{service_id}",
+      "access": "public",
+      "tag": "token-services",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/token/tokens",
+      "access": "public",
+      "tag": "token",
+      "sources": [
+        "v2-crawl-endpoints.txt"
+      ]
+    },
+    {
+      "path": "/users/public/access-token/exchange",
+      "access": "public",
+      "tag": "users",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/users/public/email-code",
+      "access": "public",
+      "tag": "users",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/users/public/obj",
+      "access": "public",
+      "tag": "users",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/users/public/obj/login",
+      "access": "public",
+      "tag": "users",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/users/public/obj/reset-password",
+      "access": "public",
+      "tag": "users",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/users/public/wechat/qrcode",
+      "access": "public",
+      "tag": "users",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/users/user/access-token/exchange-new",
+      "access": "auth",
+      "tag": "users",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/users/user/obj",
+      "access": "auth",
+      "tag": "users",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/users/user/wechat/detach",
+      "access": "auth",
+      "tag": "users",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    },
+    {
+      "path": "/users/user/wechat/qrcode/scan",
+      "access": "auth",
+      "tag": "users",
+      "sources": [
+        "v2-crawl-endpoints.txt",
+        "v2-endpoints.json"
+      ]
+    }
+  ]
+}

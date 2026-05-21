@@ -1,0 +1,8 @@
+[project]
+name = "keble-backend-recovery"
+version = "0.1.0"
+description = "Recovered keble.backend scaffold from bundle-derived route map"
+requires-python = ">=3.10"
+
+[tool.uvicorn]
+factory = false
