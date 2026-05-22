@@ -35,6 +35,26 @@ cd /Users/somalia/Documents/New\ project\ 2/reverse-keble/keble.backend
 - Generated routes: `GET /api/v2/_meta/routes`
 - Route count summary: `GET /api/v2/_meta/summary`
 
+## Regression validation
+
+Run one command to validate route coverage + critical flows end to end:
+
+```bash
+cd /Users/somalia/Documents/New\ project\ 2/reverse-keble/keble.backend
+./scripts/smoke_regression.sh
+```
+
+Detailed release checks:
+
+- `RELEASE_CHECKLIST.md`
+
+One-command full release gate from project root:
+
+```bash
+cd /Users/somalia/Documents/New\ project\ 2/reverse-keble
+./release_gate.sh
+```
+
 ## Implemented priority routes
 
 These routes are already upgraded from generic stubs to usable recovery logic:
